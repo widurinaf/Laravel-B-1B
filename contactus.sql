@@ -24,6 +24,8 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `email` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `message` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` TIMESTAMP NULL DEFAULT NULL,
+	`updated_at` TIMESTAMP NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
